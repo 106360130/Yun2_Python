@@ -2,6 +2,11 @@
 '''
 "statement"是命令，只要輸入指令就執行
 "expression"是計算，有兩個或兩個以上的變數作運算
+"expression"會產出"數值"，但"statement"不會產出數值
+e.g.
+print("123")
+print(5)
+
 '''
 
 #Q2
