@@ -4,10 +4,25 @@ import os
 file_path = os.getcwd()  #取得當前路徑
 print(file_path)
 '''
-file_path = 'D:\Jeff_Business\Yun2_Python\Python_Practice'  #設定路徑
+'''
+因為"\"是去忽略後面一個"字元"的符號
+所以打路徑的時候需要兩個"\"，也就是前面的"\"忽略後面的"\"
+e.g.
+'D:\\Jeff_Business\\Yun2_Python\\Python_Practice'
+
+或者在字串前面加一個"r"
+e.g.
+r'D:\Jeff_Business\Yun2_Python\Python_Practice'
 
 
-passwordFile = open(file_path + '\py_course_20200910.txt')
+reference :
+Raw Strings
+https://automatetheboringstuff.com/2e/chapter6/
+'''
+file_path = r'D:\Jeff_Business\Yun2_Python\Python_Practice'  #設定路徑
+
+
+passwordFile = open(file_path + r'\py_course_20200910.txt')
 secretPassword = passwordFile.read()
 print('Enter your password.')
 typedPassword = input()
